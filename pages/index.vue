@@ -1,6 +1,6 @@
 <template>
   <span>
-    <Header class="mt-16 mb-10" />
+    <Header/>
     <ArticleCard
       v-for="article in articles"
       :key="article.slug"
