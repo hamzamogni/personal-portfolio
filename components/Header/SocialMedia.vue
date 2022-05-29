@@ -1,8 +1,8 @@
 <template>
   <v-row justify="center">
-    <v-col v-for="(social, idx) in social_media" :key="idx" class="flex-grow-0">
+    <v-col v-for="(social, idx) in social_media" :key="idx" class="flex-grow-0 px-0">
       <v-btn icon :href="social.href" target="_blank">
-        <v-icon large>{{ social.icon }}</v-icon>
+        <v-icon dense>{{ social.icon }}</v-icon>
       </v-btn>
     </v-col>
   </v-row>
