@@ -1,16 +1,14 @@
 <template>
-  <v-card :to="`/blog/` + article.slug" elevation="2" class="pa-5">
-    <p class="text-h5 font-weight-black">
+  <v-card :to="`/blog/` + article.slug" flat class="pa-5">
+    <p class="text-h5 font-weight-black mb-0">
       {{ article.title }}
     </p>
-
+    <span class="text-subtitle-2 font-weight-medium ml-3">
+      {{ formatDate(article.createdAt) }} - 20 min read
+    </span>
     <div class="my-5 text-h6 font-weight-medium">
       {{ article.description }}...
     </div>
-
-    <span class="text-subtitle-2 font-weight-medium">
-      {{ formatDate(article.createdAt) }} - 20 min read
-    </span>
   </v-card>
 </template>
 
