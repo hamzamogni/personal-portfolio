@@ -16,6 +16,7 @@ export default {
         { icon: "mdi-github", href: "https://github.com/hamzamogni" },
         { icon: "mdi-linkedin", href: "https://www.linkedin.com/in/hamza-mogni" },
         { icon: "mdi-twitter", href: "https://twitter.com/hamza_mogni" },
+        { icon: "mdi-email", href: "mailto:hamzamogni5@gmail.com" },
       ],
     };
   },
