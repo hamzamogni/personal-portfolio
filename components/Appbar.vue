@@ -2,13 +2,16 @@
   <v-app-bar app elevation="0" color="transparent" class="mx-16 px-16" absolute>
     <v-toolbar-title>
       <v-btn href="/" text class="text-h6 font-weight-black">
-        Safoine El Khabich
+        Hamza Mogni
       </v-btn>
     </v-toolbar-title>
-    <!-- <v-spacer></v-spacer>
-    <v-btn text>Test</v-btn>
-    <v-btn text>Test</v-btn>
-    <v-btn text>Test</v-btn> -->
+    <v-spacer></v-spacer>
+
+    <DarkThemeSwitch />
+
+    <!-- <v-btn text>Test</v-btn> -->
+    <!-- <v-btn text>Test</v-btn> -->
+    <!-- <v-btn text>Test</v-btn> -->
   </v-app-bar>
 </template>
 
