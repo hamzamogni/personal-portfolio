@@ -23,8 +23,6 @@ export default {
     return {
       buttons: [
         { text: "Home", to: "/" },
-        // { text: "Resume", to: "" },
-        // { text: "Projects", to: "" },
         { text: "Contact", to: "/contact" },
       ],
     };
@@ -32,4 +30,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.theme--light.v-btn--active:hover::before,
+.theme--light.v-btn--active::before {
+  opacity: 0;
+}
+</style>

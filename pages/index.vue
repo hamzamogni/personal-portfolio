@@ -1,6 +1,6 @@
 <template>
   <span>
-    <Header/>
+    <Header />
     <ArticleCard
       v-for="article in articles"
       :key="article.slug"
