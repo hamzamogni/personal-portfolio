@@ -7,11 +7,11 @@
     </v-toolbar-title>
     <v-spacer></v-spacer>
 
-    <DarkThemeSwitch />
+    <v-btn v-for="(btn, idx) in buttons" :key="idx" :to="btn.to" text>
+      {{ btn.text }}
+    </v-btn>
 
-    <!-- <v-btn text>Test</v-btn> -->
-    <!-- <v-btn text>Test</v-btn> -->
-    <!-- <v-btn text>Test</v-btn> -->
+    <DarkThemeSwitch />
   </v-app-bar>
 </template>
 
@@ -22,10 +22,10 @@ export default {
   data() {
     return {
       buttons: [
-        { text: "Home", to: "" },
-        { text: "Blog", to: "" },
-        { text: "Resume", to: "" },
-        { text: "Projects", to: "" },
+        { text: "Home", to: "/" },
+        // { text: "Resume", to: "" },
+        // { text: "Projects", to: "" },
+        { text: "Contact", to: "/contact" },
       ],
     };
   },
