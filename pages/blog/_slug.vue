@@ -4,7 +4,7 @@
     <span class="text-subtitle-2 font-weight-medium">
       {{ formatDate(article.createdAt) }} - 20 min read
     </span>
-    <nuxt-content class="mt-5 text-h6" :document="article"></nuxt-content>
+    <nuxt-content class="mt-5 text-h6" :document="article" tag="article"></nuxt-content>
   </span>
 </template>
 
