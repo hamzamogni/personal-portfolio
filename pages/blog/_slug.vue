@@ -5,8 +5,12 @@
       {{ formatDate(article.createdAt) }} - 20 min read
     </span>
     <v-img :src="article.img" class="elevation-1 mt-4"></v-img>
-    <ArticleTags :tags="article.tags" class="mt-5"/>
-    <nuxt-content class="mt-10 text-h6" :document="article" tag="article"></nuxt-content>
+    <ArticleTags :tags="article.tags" class="mt-5" />
+    <nuxt-content
+      class="mt-10 text-h6"
+      :document="article"
+      tag="article"
+    ></nuxt-content>
   </span>
 </template>
 

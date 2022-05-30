@@ -1,5 +1,11 @@
 <template>
-  <v-card :to="`/blog/` + article.slug" flat outlined rounded="lg" class="px-5 py-4">
+  <v-card
+    :to="`/blog/` + article.slug"
+    flat
+    outlined
+    rounded="lg"
+    class="px-5 py-4"
+  >
     <p class="text-h5 font-weight-black mb-0">
       {{ article.title }}
     </p>
@@ -29,13 +35,12 @@ export default {
   methods: {
     formatDate(date) {
       const options = {
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-        };
-        return new Date(date).toLocaleDateString("en", options);
-    }
-    
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      };
+      return new Date(date).toLocaleDateString("en", options);
+    },
   },
 };
 </script>

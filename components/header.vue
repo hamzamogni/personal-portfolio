@@ -9,7 +9,7 @@
     </v-card-title>
 
     <v-card-subtitle class="text-body-1 font-weight-bold text--secondary pb-2">
-        Data Engineer
+      Data Engineer
     </v-card-subtitle>
 
     <v-card-text class="text--secondary text-subtitle-1 mt-0 pt-0">

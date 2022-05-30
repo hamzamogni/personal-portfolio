@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import { getSocialLinks } from '~/services/social-links';
-import { mdiEmail } from '@mdi/js';
+import { getSocialLinks } from "~/services/social-links";
+import { mdiEmail } from "@mdi/js";
 export default {
   data() {
     return {
