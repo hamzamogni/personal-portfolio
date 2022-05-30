@@ -1,5 +1,5 @@
 <template>
-  <v-card :to="`/blog/` + article.slug" flat class="px-5 py-2">
+  <v-card :to="`/blog/` + article.slug" flat rounded="lg" class="px-5 py-2">
     <p class="text-h5 font-weight-black mb-0">
       {{ article.title }}
     </p>
