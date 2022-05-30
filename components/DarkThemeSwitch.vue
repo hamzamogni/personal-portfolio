@@ -1,5 +1,5 @@
 <template>
-  <v-btn icon x-large @click.prevent="switchTheme">
+  <v-btn icon x-large aria-label="Switch Theme" @click.prevent="switchTheme">
     <v-icon>{{ icon }}</v-icon>
   </v-btn>
 </template>
