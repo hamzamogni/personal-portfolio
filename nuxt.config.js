@@ -19,7 +19,7 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "",
+        content: "Personal website of Hamza Mogni, where I share my thoughts and experiences. I am a data engineer and I am passionate about building and engineering data-intensive applications.",
       },
       {
         name: "format-detection",
