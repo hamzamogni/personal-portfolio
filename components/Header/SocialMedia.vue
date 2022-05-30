@@ -14,12 +14,13 @@
 
 <script>
 import { getSocialLinks } from '~/services/social-links';
+import { mdiEmail } from '@mdi/js';
 export default {
   data() {
     return {
       social_media: [
         ...getSocialLinks(),
-        { icon: "mdi-email", url: "mailto:hamzamogni5@gmail.com" },
+        { icon: mdiEmail, url: "mailto:hamzamogni5@gmail.com" },
       ],
     };
   },

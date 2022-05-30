@@ -3,8 +3,8 @@ import colors from "vuetify/es5/util/colors";
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - personal-portfolio",
-    title: "personal-portfolio",
+    titleTemplate: "%s",
+    title: "Hamza Mogni",
     htmlAttrs: {
       lang: "en",
     },
@@ -65,6 +65,7 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
+    defaultAssets: false,
     customVariables: ["~/assets/variables.scss"],
     treeShake: true,
     theme: {
