@@ -2,9 +2,9 @@
   <div>
   <nuxt-content class="mt-5 text-h6" :document="article"></nuxt-content>
 
-  <v-row class="flex-column mt-10" justify="center">
+  <v-row class="mt-10" justify="center">
     <v-col v-for="(social, idx) in social_media" :key="idx" cols="4" align-self="center">
-      <v-card to="social.url" outlined rounded="lg">
+      <v-card :href="social.url" target="_blank" tag="a" outlined hover rounded="lg">
         <v-card-text>
           <v-btn icon :href="social.url" target="_blank">
             <v-icon x-large>{{ social.icon }}</v-icon>
