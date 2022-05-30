@@ -52,7 +52,13 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["@nuxt/content"],
+  modules: [
+    "@nuxt/content",
+    ["@nuxtjs/robots", {
+      UserAgent: "*",
+      Disallow: "/admin",
+    }]
+  ],
 
   googleFonts: {
     families: {
