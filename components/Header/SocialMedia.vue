@@ -5,7 +5,7 @@
       :key="idx"
       class="flex-grow-0 px-0"
     >
-      <v-btn icon :href="social.href" target="_blank">
+      <v-btn icon :href="social.url" target="_blank">
         <v-icon dense>{{ social.icon }}</v-icon>
       </v-btn>
     </v-col>
@@ -13,17 +13,13 @@
 </template>
 
 <script>
+import { getSocialLinks } from '~/services/social-links';
 export default {
   data() {
     return {
       social_media: [
-        { icon: "mdi-github", href: "https://github.com/hamzamogni" },
-        {
-          icon: "mdi-linkedin",
-          href: "https://www.linkedin.com/in/hamza-mogni",
-        },
-        { icon: "mdi-twitter", href: "https://twitter.com/hamza_mogni" },
-        { icon: "mdi-email", href: "mailto:hamzamogni5@gmail.com" },
+        ...getSocialLinks(),
+        { icon: "mdi-email", url: "mailto:hamzamogni5@gmail.com" },
       ],
     };
   },
