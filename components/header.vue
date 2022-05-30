@@ -4,9 +4,13 @@
       <HeaderAvatar :src="require('@/assets/hmogni.jpg')" />
     </v-row>
 
-    <v-card-title class="mb-0 pb-0 justify-center text-h5 font-weight-bold">
-      Data Engineer
+    <v-card-title class="justify-center text-h5 font-weight-bold">
+      Hamza Mogni
     </v-card-title>
+
+    <v-card-subtitle class="text-body-1 font-weight-bold text--secondary pb-2">
+        Data Engineer
+    </v-card-subtitle>
 
     <v-card-text class="text--secondary text-subtitle-1 mt-0 pt-0">
       I am a Data Engineer passionate about building data-driven products, with
