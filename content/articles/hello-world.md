@@ -6,6 +6,8 @@ title: How I code for 8 hours without feeling tired.
 description: I thought it was okay to just sit down at my desk, open my laptop, take a task from my To-Do list, and code until I felt tired.
 img: https://miro.medium.com/max/700/1*rX8eWKG10xtW_8Ojiq_OBg.jpeg
 alt: How I code for 8 hours without feeling tired.
+
+tags: [k8s, DevSecOps, Networking]
 ---
 
 # Documentation
