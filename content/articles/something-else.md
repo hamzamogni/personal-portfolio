@@ -2,9 +2,9 @@
 author:
     name: Hamza Mogni
 
-title: Data salaries at FAANG companies in 2022
-description: Salary is a sensitive topic. Should it be? There are a lot of good reasons why salaries should be transparent
-img: https://miro.medium.com/max/700/1*kIP5PxDTogpvm_AMdPwaFQ.png
+title: Documentation test
+description: this is a test article
+img: https://via.placeholder.com/500?text=Hamza+Mogni
 alt: something else article
 
 tags: [Software Engineering, Docker]
