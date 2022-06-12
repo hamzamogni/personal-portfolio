@@ -29,6 +29,6 @@ Data regarding daily cases was scraped from [https://www.worldometers.info/coron
 
 <center>
 
-![COVID chatbot architecture](/_nuxt/assets/images/portfolio/sahm/architecture.svg "COVID chatbot architecture")
+![COVID chatbot architecture](/images/portfolio/sahm/architecture.svg "COVID chatbot architecture")
 
 </center>
