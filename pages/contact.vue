@@ -19,7 +19,7 @@
         >
           <v-card-text>
             <v-btn icon :href="social.url" target="_blank">
-              <v-icon x-large>{{ social.icon }}</v-icon>
+              <v-icon x-large color="primary">{{ social.icon }}</v-icon>
             </v-btn>
             <span class="text-h6 ml-5">
               {{ social.name }}

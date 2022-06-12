@@ -19,7 +19,8 @@ export default {
       {
         hid: "description",
         name: "description",
-        content: "Personal website of Hamza Mogni, where I share my thoughts and experiences. I am a data engineer and I am passionate about building and engineering data-intensive applications.",
+        content:
+          "Personal website of Hamza Mogni, where I share my thoughts and experiences. I am a data engineer and I am passionate about building and engineering data-intensive applications.",
       },
       {
         name: "format-detection",
@@ -54,10 +55,13 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     "@nuxt/content",
-    ["@nuxtjs/robots", {
-      UserAgent: "*",
-      Disallow: "/admin",
-    }]
+    [
+      "@nuxtjs/robots",
+      {
+        UserAgent: "*",
+        Disallow: "/admin",
+      },
+    ],
   ],
 
   googleFonts: {
@@ -78,7 +82,16 @@ export default {
       dark: false,
       themes: {
         dark: {
-          primary: colors.blue.darken2,
+          primary: colors.purple.lighten1,
+          accent: colors.grey.darken3,
+          secondary: colors.amber.darken3,
+          info: colors.teal.lighten1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3,
+        },
+        light: {
+          primary: colors.purple.lighten2,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,

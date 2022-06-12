@@ -1,13 +1,10 @@
 <template>
   <v-row>
-    <v-chip
-      v-for="(tag, idx) in tags"
-      :key="idx"
-      outlined
-      class="mx-1 mt-6"
-      elevation="1"
-      >{{ tag }}</v-chip
-    >
+    <v-col class="flex-grow-0 px-1 py-1" v-for="(tag, idx) in tags" :key="idx">
+      <v-chip outlined elevation="1">{{
+        tag
+      }}</v-chip>
+    </v-col>
   </v-row>
 </template>
 
