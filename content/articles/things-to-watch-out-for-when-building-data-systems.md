@@ -8,8 +8,9 @@ alt: Reliability, Scalability, and Maintainability of distributed data systems
 tags: [Big Data, Distributed Systems]
 ---
 
-> 🚨 *This article summarises the first chapter of the book*  [Designing Data-Intensive  Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321/ref=sr_1_1?crid=3NJT47VKRLNUI&keywords=designing+data-intensive+applications&qid=1656192466&sprefix=fluent+pyth%2Caps%2C549&sr=8-1) *by Martin Kleppe. I am publishing summaries of each chapter I read.*
-
+<note>
+        💡 This article summarises the first chapter of the book <a href="https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321/ref=sr_1_1?crid=3NJT47VKRLNUI&keywords=designing+data-intensive+applications&qid=1656192466&sprefix=fluent+pyth%2Caps%2C549&sr=8-1">Designing Data-Intensive Applications</a> by Martin Kleppe. I am publishing summaries of each chapter I read.
+</note>
 
 ## Introduction
 

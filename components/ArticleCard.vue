@@ -12,7 +12,7 @@
     <span class="text-subtitle-2 font-weight-medium text--secondary">
       {{ formatDate(article.createdAt) }} 
     </span>
-    <div class="mt-5 text-subtitle-1 font-weight-medium">
+    <div class="my-3 text-subtitle-1 font-weight-medium">
       {{ article.description }}...
     </div>
 
