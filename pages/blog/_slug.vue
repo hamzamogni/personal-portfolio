@@ -24,7 +24,7 @@ export default {
     $seoMeta({
       title: article.title,
       description: article.description,
-      // image: `${baseUrl}/images/${article.img}`,
+      image: `${baseUrl}/images/${article.img}`,
       twitterUser: "hamzamogni",
     });
 
@@ -33,7 +33,14 @@ export default {
 
   head() {
     return {
-      title: this.article.title
+      title: this.article.title,
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.article.description,
+        },
+      ],
     }
   },
 
