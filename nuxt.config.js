@@ -18,12 +18,6 @@ export default {
         content: "width=device-width, initial-scale=1",
       },
       {
-        hid: "description",
-        name: "description",
-        content:
-          "Personal website of Hamza Mogni, where I share my thoughts and experiences. I am a data engineer and I am passionate about building and engineering data-intensive applications.",
-      },
-      {
         name: "format-detection",
         content: "telephone=no",
       },
@@ -67,7 +61,8 @@ export default {
   ],
 
   seoMeta: {
-    keywords: "hamza mogni, data engineer, data, engineer, distributed systems, engineering, data engineering"
+    keywords: "hamza mogni, data engineer, data, engineer, distributed systems, engineering, data engineering",
+    description: "Personal website of Hamza Mogni, where I share my thoughts and experiences. I am a data engineer and I am passionate about building and engineering data-intensive applications.",
   },
 
   googleFonts: {
