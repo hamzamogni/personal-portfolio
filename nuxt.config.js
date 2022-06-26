@@ -63,7 +63,12 @@ export default {
         Disallow: "/admin",
       },
     ],
+    "nuxt-seo-meta",
   ],
+
+  seoMeta: {
+    keywords: "hamza mogni, data engineer, data, engineer, distributed systems, engineering, data engineering"
+  },
 
   googleFonts: {
     families: {

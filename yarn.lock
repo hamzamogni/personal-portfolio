@@ -7605,6 +7605,13 @@ num2fraction@^1.2.2:
   resolved "https://registry.yarnpkg.com/num2fraction/-/num2fraction-1.2.2.tgz#6f682b6a027a4e9ddfa4564cd2589d1d4e669ede"
   integrity sha1-b2gragJ6Tp3fpFZM0lidHU5mnt4=
 
+nuxt-seo-meta@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/nuxt-seo-meta/-/nuxt-seo-meta-2.3.1.tgz#f26d20e3ef3a25d0b05c42dd06c648c4864e6a8e"
+  integrity sha512-WcImaUBklKKsQz7SHTvfwuARrfSmJGtC8hjgW0mBrEvo5rtAqT+8mQAAsblxI24hD9O+OYRKFM6J1B9hoVu13g==
+  dependencies:
+    requrl "^3.0.2"
+
 nuxt@^2.15.7:
   version "2.15.8"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.15.8.tgz#946cba46bdaaf0e3918aa27fd9ea0fed8ed303b0"
@@ -9225,6 +9232,11 @@ require-directory@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
   integrity sha1-jGStX9MNqxyXbiNE/+f3kqam30I=
+
+requrl@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/requrl/-/requrl-3.0.2.tgz#d376104193b02a2d874dde68454c2db2dfeb0fac"
+  integrity sha512-f3gjR6d8MhOpn46PP+DSJywbmxi95fxQm3coXBFwognjFLla9X6tr8BdNyaIKNOEkaRbRcm0/zYAqN19N1oyhg==
 
 resolve-alpn@^1.0.0:
   version "1.2.1"

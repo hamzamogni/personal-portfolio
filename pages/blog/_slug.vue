@@ -17,10 +17,25 @@
 <script>
 export default {
   layout: "blog-index",
-  async asyncData({ $content, params }) {
+  async asyncData({ $content, params, $seoMeta }) {
     const article = await $content("articles", params.slug).fetch();
+    
+    $seoMeta({
+      title: article.title,
+      description: article.description,
+      image: `https://hmogni.me/static/images/${article.img}`,
+      twitterUser: "hamzamogni",
+    });
+
     return { article };
   },
+
+  head() {
+    return {
+      title: this.article.title
+    }
+  },
+
   methods: {
     formatDate(date) {
       const options = {
