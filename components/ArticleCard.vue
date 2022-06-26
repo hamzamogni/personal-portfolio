@@ -9,7 +9,7 @@
     <p class="text-h5 font-weight-black mb-0">
       {{ article.title }}
     </p>
-    <span class="text-subtitle-2 font-weight-medium text--secondary ml-3">
+    <span class="text-subtitle-2 font-weight-medium text--secondary">
       {{ formatDate(article.createdAt) }} - 20 min read
     </span>
     <div class="mt-5 text-subtitle-1 font-weight-medium">
