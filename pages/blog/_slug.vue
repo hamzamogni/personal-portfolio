@@ -1,10 +1,10 @@
 <template>
   <span>
     <p class="mb-0 mt-10" id="title">{{ article.title }}</p>
-    <span class="text-subtitle-2 font-weight-medium text--secondary ml-3">
-      {{ formatDate(article.createdAt) }} - 20 min read
+    <span class="text-subtitle-2 font-weight-medium text--secondary">
+      {{ formatDate(article.createdAt) }}
     </span>
-    <v-img :src="article.img" class="elevation-1 mt-4"></v-img>
+    <v-img :src="require(`~/static/images/${article.img}`)" class="elevation-1 mt-4"></v-img>
     <ArticleTags :tags="article.tags" class="mt-5" />
     <nuxt-content
       class="mt-10 text-h6"

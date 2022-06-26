@@ -23,7 +23,6 @@ export default {
     return {
       buttons: [
         { text: "Home", to: "/" },
-        { text: "Portfolio", to: "/portfolio" },
         { text: "Contact", to: "/contact" },
       ],
     };
