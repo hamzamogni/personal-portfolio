@@ -10,7 +10,7 @@
       {{ article.title }}
     </p>
     <span class="text-subtitle-2 font-weight-medium text--secondary">
-      {{ formatDate(article.createdAt) }} - 20 min read
+      {{ formatDate(article.createdAt) }} 
     </span>
     <div class="mt-5 text-subtitle-1 font-weight-medium">
       {{ article.description }}...

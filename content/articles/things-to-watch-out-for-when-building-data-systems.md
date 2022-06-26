@@ -1,14 +1,12 @@
 ---
 
-title: Reliability, Scalability, and Maintainability of distributed data systems
-description: What are the most important factors to consider when designing a distributed data system?
+title: What should you watch out for when building distributed data systems?
+description: Fundamental questions and challenges to think about when building a distributed data system.
 img: articles/ddia-ch1/cover.jpg
-alt: This is the first article, published as an introduction
+alt: Reliability, Scalability, and Maintainability of distributed data systems
 
 tags: [Big Data, Distributed Systems]
 ---
-
-<!--more-->
 
 > 🚨 *This article summarises the first chapter of the book*  [Designing Data-Intensive  Applications](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321/ref=sr_1_1?crid=3NJT47VKRLNUI&keywords=designing+data-intensive+applications&qid=1656192466&sprefix=fluent+pyth%2Caps%2C549&sr=8-1) *by Martin Kleppe. I am publishing summaries of each chapter I read.*
 
