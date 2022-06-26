@@ -4,7 +4,7 @@
     <span class="text-subtitle-2 font-weight-medium text--secondary">
       {{ formatDate(article.createdAt) }}
     </span>
-    <v-img :src="require(`~/static/images/${article.img}`)" class="elevation-1 mt-4"></v-img>
+    <v-img ref="article-image" :src="`/images/${article.img}`" class="elevation-1 mt-4"></v-img>
     <ArticleTags :tags="article.tags" class="mt-5" />
     <nuxt-content
       class="mt-10 text-h6"
@@ -17,13 +17,14 @@
 <script>
 export default {
   layout: "blog-index",
-  async asyncData({ $content, params, $seoMeta }) {
+  async asyncData({ $content, params, $seoMeta, req }) {
+    const baseUrl = req ? req.headers.host : window.location.host;
     const article = await $content("articles", params.slug).fetch();
     
     $seoMeta({
       title: article.title,
       description: article.description,
-      image: `https://hmogni.me/static/images/${article.img}`,
+      image: `${baseUrl}/images/${article.img}`,
       twitterUser: "hamzamogni",
     });
 
