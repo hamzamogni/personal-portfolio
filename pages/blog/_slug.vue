@@ -24,7 +24,8 @@ export default {
       title: article.title,
       description: article.description,
       image: `https://hmogni.me/images/${article.img}`,
-      twitterUser: "hamzamogni",
+      twitterUser: "@hamza_mogni",
+      url: `https://hmogni.me/blog/${article.slug}`,
     });
 
     return { article };
