@@ -21,6 +21,10 @@ export default {
         name: "format-detection",
         content: "telephone=no",
       },
+      {
+        name: "author",
+        content: "Hamza Mogni",
+      }
     ],
     link: [
       {
