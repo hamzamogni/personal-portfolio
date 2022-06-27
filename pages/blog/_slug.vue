@@ -18,13 +18,12 @@
 export default {
   layout: "blog-index",
   async asyncData({ $content, params, $seoMeta, req }) {
-    const baseUrl = req ? req.headers.host : window.location.host;
     const article = await $content("articles", params.slug).fetch();
     
     $seoMeta({
       title: article.title,
       description: article.description,
-      image: `${baseUrl}/images/${article.img}`,
+      image: `https://hmogni.me/images/${article.img}`,
       twitterUser: "hamzamogni",
     });
 
@@ -33,7 +32,7 @@ export default {
 
   head() {
     return {
-      title: this.article.title
+      title: this.article.title,
     }
   },
 
