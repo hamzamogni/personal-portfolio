@@ -6,6 +6,7 @@ img: articles/ddia-ch1/cover.jpg
 alt: Reliability, Scalability, and Maintainability of distributed data systems
 
 tags: [Big Data, Distributed Systems]
+keywords: [Data System, Distributed Data System, Data-Intensive Applications, Big Data, Distributed Systems, Reliability, Scalability, Maintainability]
 ---
 
 <note>
