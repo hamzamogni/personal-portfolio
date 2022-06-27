@@ -60,7 +60,7 @@ export default {
       "@nuxtjs/robots",
       {
         UserAgent: "*",
-        Disallow: "/admin",
+        Allow: "*",
       },
     ],
     "nuxt-seo-meta",
