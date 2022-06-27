@@ -1,7 +1,7 @@
 ---
 
 title: What should you watch out for when building distributed data systems?
-description: Fundamental questions and challenges to think about when building a robust distributed data system.
+description: Fundamental questions and challenges to think about when building a robust distributed data-intensive systems.
 img: articles/ddia-ch1/cover.jpg
 alt: Reliability, Scalability, and Maintainability of distributed data systems
 
