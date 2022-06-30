@@ -4,7 +4,11 @@
     <span class="text-subtitle-2 font-weight-medium text--secondary">
       {{ formatDate(article.createdAt) }}
     </span>
-    <v-img ref="article-image" :src="`/images/${article.img}`" class="elevation-1 mt-4"></v-img>
+    <v-img
+      ref="article-image"
+      :src="`/images/${article.img}`"
+      class="elevation-1 mt-4"
+    ></v-img>
     <ArticleTags :tags="article.tags" class="mt-5" />
     <nuxt-content
       class="mt-10 text-h6"
@@ -19,14 +23,14 @@ export default {
   layout: "blog-index",
   async asyncData({ $content, params, $seoMeta, req }) {
     const article = await $content("articles", params.slug).fetch();
-    
+
     $seoMeta({
       title: article.title,
       description: article.description,
       image: `https://hmogni.me/images/${article.img}`,
       twitterUser: "@hamza_mogni",
       url: `https://hmogni.me/blog/${article.slug}`,
-      keywords: article.keywords.join(', ')
+      keywords: article.keywords.join(", "),
     });
 
     return { article };
@@ -35,7 +39,7 @@ export default {
   head() {
     return {
       title: this.article.title,
-    }
+    };
   },
 
   methods: {

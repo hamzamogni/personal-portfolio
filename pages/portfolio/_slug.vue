@@ -1,7 +1,11 @@
 <template>
   <span>
     <p class="mb-0 mt-10" id="title">{{ project.title }}</p>
-    <v-img :src="require(`~/assets/images/${project.img}`)" max-height="300px" class="mt-4 rounded-lg"></v-img>
+    <v-img
+      :src="require(`~/assets/images/${project.img}`)"
+      max-height="300px"
+      class="mt-4 rounded-lg"
+    ></v-img>
     <ArticleTags :tags="project.tags" class="mt-5 px-4" />
     <nuxt-content
       class="mt-10 text-h6 px-4"
@@ -13,20 +17,19 @@
 
 <script>
 export default {
-    layout: "blog-index",
+  layout: "blog-index",
 
-    async asyncData({ $content, params }) {
-        const project = await $content("portfolio", params.slug).fetch();
-        return { project };
-    },
-
-}
+  async asyncData({ $content, params }) {
+    const project = await $content("portfolio", params.slug).fetch();
+    return { project };
+  },
+};
 </script>
 
 <style>
 #title {
-    font-size: 2rem;
-    font-weight: 900;
+  font-size: 2rem;
+  font-weight: 900;
 }
 h1,
 h2,
