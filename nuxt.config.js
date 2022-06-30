@@ -1,7 +1,7 @@
 import colors from "vuetify/es5/util/colors";
 
 export default {
-  target: 'static',
+  target: "static",
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: "%s",
@@ -24,7 +24,7 @@ export default {
       {
         name: "author",
         content: "Hamza Mogni",
-      }
+      },
     ],
     link: [
       {
@@ -62,11 +62,32 @@ export default {
       },
     ],
     "nuxt-seo-meta",
+    "@nuxtjs/sitemap",
   ],
 
+  sitemap: {
+    hostname: "https://hmogni.me",
+
+    routes: async () => {
+      const { $content } = require("@nuxt/content");
+      const articles = await $content("articles")
+        .only(["slug", "createdAt"])
+        .fetch();
+      const routes = articles.map((article) => {
+        return {
+          url: `/blog/${article.slug}`,
+          lastmod: article.createdAt,
+        };
+      });
+      return routes;
+    },
+  },
+
   seoMeta: {
-    keywords: "hamza mogni, data engineer, data, engineer, distributed systems, engineering, data engineering",
-    description: "Personal website of Hamza Mogni, where I share my thoughts and experiences. I am a data engineer and I am passionate about building and engineering data-intensive applications.",
+    keywords:
+      "hamza mogni, data engineer, data, engineer, distributed systems, engineering, data engineering",
+    description:
+      "Personal website of Hamza Mogni, where I share my thoughts and experiences. I am a data engineer and I am passionate about building and engineering data-intensive applications.",
   },
 
   googleFonts: {
