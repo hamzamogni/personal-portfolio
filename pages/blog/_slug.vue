@@ -4,7 +4,7 @@
         <span class="text-subtitle-2 font-weight-medium text--secondary">
             {{ formatDate(article.createdAt) }}
         </span>
-        <v-img ref="article-image" :src="`/images/${article.img}`" class="elevation-1 mt-4"></v-img>
+        <v-img eager :src="require(`@/assets/images/${article.img}`)" class="elevation-1 mt-4"></v-img>
         <ArticleTags :tags="article.tags" class="mt-5" />
         <nuxt-content class="mt-10 text-h6" :document="article" tag="article"></nuxt-content>
     </span>

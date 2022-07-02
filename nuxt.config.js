@@ -101,7 +101,11 @@ export default {
     vuetify: {
         defaultAssets: false,
         customVariables: ['~/assets/variables.scss'],
-        treeShake: true,
+        treeShake: {
+            loaderOptions: {
+                progressiveImages: true,
+            },
+        },
         theme: {
             dark: false,
             themes: {
@@ -128,5 +132,7 @@ export default {
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {},
+    build: {
+        extractCSS: true,
+    },
 }
