@@ -4,7 +4,7 @@
         <span class="text-subtitle-2 font-weight-medium text--secondary">
             {{ formatDate(article.createdAt) }}
         </span>
-        <v-img eager :src="require(`@/assets/images/${article.img}`)" class="elevation-1 mt-4"></v-img>
+        <DocumentImage :src="article.img" :alt="article.title"></DocumentImage>
         <ArticleTags :tags="article.tags" class="mt-5" />
         <nuxt-content class="mt-10 text-h6" :document="article" tag="article"></nuxt-content>
     </span>
@@ -15,7 +15,6 @@ export default {
     layout: 'blog-index',
     async asyncData({ $content, params, $seoMeta }) {
         const article = await $content('articles', params.slug).fetch()
-
         $seoMeta({
             title: article.title,
             description: article.description,
@@ -24,16 +23,13 @@ export default {
             url: `https://hmogni.me/blog/${article.slug}`,
             keywords: article.keywords.join(', '),
         })
-
         return { article }
     },
-
     head() {
         return {
             title: this.article.title,
         }
     },
-
     methods: {
         formatDate(date) {
             const options = {
