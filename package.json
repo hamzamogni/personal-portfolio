@@ -18,6 +18,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
+    "nuxt-content-git": "^3.0.1",
     "nuxt-seo-meta": "^2.3.1",
     "vue-gtag": "^1.16.1",
     "vuetify": "^2.5.5"
