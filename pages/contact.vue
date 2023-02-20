@@ -26,7 +26,6 @@ export default {
     layout: 'blog-index',
     async asyncData({ $content }) {
         const article = await $content('/', 'contact').fetch()
-        console.log(article)
 
         return { article }
     },
