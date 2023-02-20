@@ -2,7 +2,7 @@
 title: How ACID are your transactions?
 description: We often hear the term ACID when we talk about database transactions, in this article we will dissect what they mean.
 alt: relational databases, transactions
-img: articles/ddia-ch1/cover.jpg
+img: articles/acid-transactions/cover.jpg
 
 tags: [Databases Engineering, Transactions]
 keywords: [ACID, atomicity, consistency, isolation, durability, databases, relational databases, transactions]
