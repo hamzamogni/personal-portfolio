@@ -19,7 +19,7 @@ export default {
         $seoMeta({
             title: article.title,
             description: article.description,
-            image: `https://hmogni.me/images/${article.img}`,
+            image: require(`@/assets/images/${article.img}`),
             twitterUser: '@hamza_mogni',
             url: `https://hmogni.me/blog/${article.slug}`,
             keywords: article.keywords.join(', '),
@@ -62,7 +62,7 @@ h6 {
     font-weight: 900;
 }
 
-pre > code {
+pre>code {
     background-color: transparent !important;
 }
 </style>

@@ -1,14 +1,8 @@
 <template>
     <v-row>
         <v-col v-for="(project, idx) in projects" :key="idx" cols="12" sm="6">
-            <ProjectCard
-                :img="project.img"
-                :title="project.title"
-                :tags="project.tags"
-                :description="project.description"
-                :path="project.path"
-                class="ma-3"
-            />
+            <ProjectCard :img="project.img" :title="project.title" :tags="project.tags" :description="project.description"
+                :path="project.path" class="ma-3" />
         </v-col>
     </v-row>
 </template>
@@ -32,7 +26,6 @@ export default {
             merged.push(...element.tags)
         })
 
-        console.log([...new Set(merged)])
         return {
             projects,
         }
