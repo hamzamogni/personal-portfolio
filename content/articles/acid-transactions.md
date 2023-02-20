@@ -61,7 +61,7 @@ Durability refers to the process of persisting data to a non-volatile storage sy
 This log can be used by the database to recover from a system crash. we should also note that operating systems don't always write changes to disk but they usually store it in their own cache and then batch write to disk, therefore databases have to make sure to tell the OS to skip the cache.
 
 <note>
-There is also another technique called AOF (append-only file) which is very similar to WAL
+💡 There is also another technique called AOF (append-only file) which is very similar to WAL
 </note>
 
 ### Asynchronous snapshots
@@ -71,3 +71,7 @@ When using these techniques, databases will keep all changes in memory and async
 ## Conclusion
 
 In this article we have summarized the 4 properties of database transaction, namely Atomicity, Consistency, Isolation, and Durability. We have seen how databases implement these properties to ensure a consistent and safe state of data. Understanding these properties is very important when dealing with complex database engineering challenges.
+
+<br><br>
+-----
+<small><em>Images on this article contain content <a href="https://www.freepik.com">designed by Freepik</a></em></small>
