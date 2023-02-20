@@ -2,6 +2,8 @@ FROM node:14-alpine
 
 WORKDIR /app
 
+RUN apk add git && git config --global --add safe.directory /app 
+
 COPY . .
 
 RUN yarn install
