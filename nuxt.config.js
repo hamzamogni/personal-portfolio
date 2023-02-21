@@ -61,6 +61,7 @@ export default {
             {
                 UserAgent: '*',
                 Allow: '*',
+                Sitemap: 'https://hmogni.me/sitemap.xml',
             },
         ],
         'nuxt-seo-meta',
