@@ -18,7 +18,7 @@ export default {
         $seoMeta({
             title: article.title,
             description: article.description,
-            image: `https://hmogni.me/images/${article.img}`,
+            image: require(`@/assets/images/${article.img}`),
             twitterUser: '@hamza_mogni',
             url: `https://hmogni.me/blog/${article.slug}`,
             keywords: article.keywords.join(', '),

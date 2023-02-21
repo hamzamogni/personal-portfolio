@@ -32,7 +32,6 @@ export default {
             merged.push(...element.tags)
         })
 
-        console.log([...new Set(merged)])
         return {
             projects,
         }

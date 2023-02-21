@@ -54,12 +54,14 @@ export default {
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
+        'nuxt-content-git',
         '@nuxt/content',
         [
             '@nuxtjs/robots',
             {
                 UserAgent: '*',
                 Allow: '*',
+                Sitemap: 'https://hmogni.me/sitemap.xml',
             },
         ],
         'nuxt-seo-meta',
