@@ -62,7 +62,7 @@ h6 {
     font-weight: 900;
 }
 
-pre>code {
+pre > code {
     background-color: transparent !important;
 }
 </style>

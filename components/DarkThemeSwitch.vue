@@ -13,9 +13,14 @@ export default {
         },
     },
 
+    mounted() {
+        this.$vuetify.theme.dark = localStorage.getItem('dark') === 'true'
+    },
+
     methods: {
         switchTheme() {
             this.$vuetify.theme.dark = !this.$vuetify.theme.dark
+            localStorage.setItem('dark', this.$vuetify.theme.dark)
         },
     },
 }
