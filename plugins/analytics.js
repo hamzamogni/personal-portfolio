@@ -9,6 +9,7 @@ export default (context, inject) => {
         {
             config: { id: id },
             pageTrackerScreenviewEnabled: true,
+            appName: 'Hamza Mogni Website',
         },
         context.app.router
     )
